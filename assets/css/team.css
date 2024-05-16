@@ -1,0 +1,143 @@
+.container {
+  margin-top: 20px; /* Aralığı istədiyiniz kimi ayarlaya bilərsiniz */
+}
+
+.col-md-6 img {
+  max-width: 100%; /* Şəkilin div-in eninə uyğun gəlməsinə kömək edir */
+}
+
+.col-md-6 h2 {
+  margin-top: 0; /* Başlığın yuxarı sərhədən olan aralığını ləğv edir */
+}
+
+.col-md-6 ul {
+  list-style-type: none; /* Məlumatların növləndirməsini ləğv edir */
+  padding: 0; /* Məlumatlar arasındakı aralığı ləğv edir */
+}
+
+.col-md-6 ul li {
+  margin-bottom: 10px; /* Məlumatlar arasında boşluğu tənzimləyir */
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading span {
+  font-size: 32px;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+}
+
+.heading h2 {
+  font-size: 52px;
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+  margin: 11px 0;
+}
+
+.heading p {
+  font-size: 20px;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+}
+
+.teams {
+  margin: 113px 0;
+  padding: 0 76px;
+}
+
+.teams .card-image {
+  width: 344px;
+  height: 344px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+@media (max-width: 768px) {
+  .heading span {
+    font-size: 24px;
+  }
+  .heading h2 {
+    font-size: 35px;
+  }
+  .heading p {
+    font-size: 16px;
+  }
+  .teams {
+    margin: 50px 0;
+    padding: 0 32px;
+  }
+
+  .teams .card-image {
+    height: 250px;
+  }
+}
+
+.teams .card-item {
+  display: flex;
+  gap: 16px;
+}
+
+.teams .card .links {
+  display: flex;
+  gap: 7px;
+}
+
+.teams .card .links li {
+  margin: 0px;
+}
+
+.teams .card a {
+  padding: 0px;
+}
+
+.teams .card .links img {
+  width: 23px;
+  height: 23px;
+  overflow: hidden;
+}
+
+.teams .card {
+  background-color: rgba(232, 230, 230, 0.8);
+  border: none;
+  border-radius: 0px;
+}
+
+.teams .card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.teams .card-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.teams .card-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media (max-width: 576px) {
+  .teams {
+    margin: 50px 0;
+    padding: 0;
+  }
+
+  .teams .card .row {
+    flex-direction: column;
+  }
+
+  .teams .card-image {
+    width: 100%;
+  }
+
+  .teams .card-body,
+  .teams .card .links {
+    text-align: center;
+    justify-content: center;
+  }
+}
